@@ -8,7 +8,6 @@
     --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
     --border: .2rem solid var(--green);
 }
-
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0; padding: 0;
@@ -472,14 +471,38 @@ section:nth-child(even){
 } 
 /* Footer section End */
 
-
-
-
-
-
-
-
-
+.patient .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+.patient .box-container .box{
+    text-align: center;
+    background: #fff;
+    border: var(--border);
+    border-radius: 15%;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+}
+.patient .box-container .box img{
+    height: 20rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    float:left;
+}
+.patient .box-container .box h3{
+    margin-top: 5px;
+    color: var(--black);
+    font-size: 2.5rem;
+}
+.patient .box-container .box span{
+    color: var(--green);
+    font-size: 1.2rem;
+}
+.patient .box-container .box .share{
+    padding-top: 2rem;
+}
 
 /* media queries  */
 @media (max-width:991px){
@@ -537,3 +560,4 @@ section:nth-child(even){
     }
 
 }
+
